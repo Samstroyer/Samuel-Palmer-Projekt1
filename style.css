@@ -51,25 +51,24 @@ body {
 }
 
 #info {
-    display: flex;
-    position: relative;
-    transform: translate(40vw, 120px);
+    border: 4px dotted black;
+    z-index: 1;
+    display: block;
+    position: fixed;
+    top: 120px;
+    right: 0px;
     width: max(20vw, 175px);
     background-color: #4F0F0F;
     padding: 3ch;
-    display: block;
     color: rgb(226, 197, 144);
+    height: fit-content;
 }
 
 #info h1 {
-    display: flex;
-    justify-content: center;
     font-size: max(1.3vw, 15px);
 }
 
 #info h2 {
-    display: flex;
-    justify-content: center;
     font-size: max(1vw, 10px);
     padding-bottom: 3ch;
 }
@@ -93,4 +92,29 @@ body {
     cursor: text;
     text-shadow: 1px 1px 0 rgb(158, 114, 3);
     transition: all 200ms ease-out;
+}
+
+#closeButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid white;
+}
+
+#closeButton:hover {
+    color: red;
+    background-color: yellow;
+    transition: all 250ms ease-out;
+}
+
+#trending-section {
+    border: 10px solid gold;
+    display: flex;
+    position: fixed;
+    align-self: center;
+    top: 150px;
+    width: 80%;
+    background-color: #4F0F0F;
+    padding: 3ch;
+    color: rgb(226, 197, 144);
 }
