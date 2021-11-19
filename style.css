@@ -1,120 +1,159 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
 }
 
 #navbarContainer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-image: linear-gradient( 90deg, rgb(231, 0, 0) 0%, rgb(18, 173, 25) 33%, rgb(29, 57, 185) 66%, rgb(223, 2, 207) 100%);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(231, 0, 0) 0%,
+    rgb(18, 173, 25) 33%,
+    rgb(29, 57, 185) 66%,
+    rgb(223, 2, 207) 100%
+  );
 }
 
 .navbar {
-    display: flex;
-    background-image: url("/Images/navBarTexture.jpg");
-    width: 90%;
-    height: 50%;
-    justify-content: space-between;
+  display: flex;
+  background-image: url("/Images/navBarTexture.jpg");
+  width: 90%;
+  height: 50%;
+  justify-content: space-between;
 }
 
 .navbar a {
-    line-height: 3rem;
-    text-decoration: none;
-    font-size: max(1.8vw, 12px);
-    color: crimson;
-    padding: 0% min(3ch, 5px);
-    margin: 0% 4vw;
-    cursor: pointer;
+  line-height: 3rem;
+  text-decoration: none;
+  font-size: max(1.8vw, 12px);
+  color: crimson;
+  padding: 0% min(3ch, 5px);
+  margin: 0% 4vw;
+  cursor: pointer;
 }
 
 .navbar a:hover,
 .navbar a:focus {
-    box-shadow: inset 0px 0px 10px violet;
-    transition: all 200ms ease-out;
+  box-shadow: inset 0px 0px 10px violet;
+  transition: all 200ms ease-out;
 }
 
 .trending-section h1,
 .heading h1 {
-    transform: translate();
-    font-size: 5vw;
+  transform: translate();
+  font-size: 5vw;
 }
 
 #info {
-    border: 4px dotted black;
-    z-index: 1;
-    display: block;
-    position: fixed;
-    top: 120px;
-    right: 0px;
-    width: max(20vw, 175px);
-    background-color: #4F0F0F;
-    padding: 3ch;
-    color: rgb(226, 197, 144);
-    height: fit-content;
+  border: 4px dotted black;
+  z-index: 1;
+  display: block;
+  position: fixed;
+  top: 120px;
+  right: 0px;
+  width: max(20vw, 175px);
+  background-color: #4f0f0f;
+  padding: 3ch;
+  color: rgb(226, 197, 144);
+  height: fit-content;
 }
 
 #info h1 {
-    font-size: max(1.3vw, 15px);
+  font-size: max(1.3vw, 15px);
 }
 
 #info h2 {
-    font-size: max(1vw, 10px);
-    padding-bottom: 3ch;
+  font-size: max(1vw, 10px);
+  padding-bottom: 3ch;
 }
 
 #info a,
 #info p {
-    line-height: 2ch;
-    font-size: medium;
-    padding-bottom: 1.5ch;
+  line-height: 2ch;
+  font-size: medium;
+  padding-bottom: 1.5ch;
 }
 
 #info a {
-    text-decoration: underline goldenrod;
-    text-shadow: 1px 1px 2px white;
-    color: wheat;
-    padding-bottom: 0px;
+  text-decoration: underline goldenrod;
+  text-shadow: 1px 1px 2px white;
+  color: wheat;
+  padding-bottom: 0px;
 }
 
 #info a:hover,
 #info a:focus {
-    cursor: text;
-    text-shadow: 1px 1px 0 rgb(158, 114, 3);
-    transition: all 200ms ease-out;
+  cursor: text;
+  text-shadow: 1px 1px 0 rgb(158, 114, 3);
+  transition: all 200ms ease-out;
 }
 
 #closeButton {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 2px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid white;
 }
 
 #closeButton:hover {
-    color: red;
-    background-color: yellow;
-    transition: all 250ms ease-out;
+  color: red;
+  background-color: yellow;
+  transition: all 250ms ease-out;
 }
 
 #trending-section {
-    border: 10px solid gold;
-    display: flex;
-    position: fixed;
-    align-self: center;
-    top: 150px;
-    width: 80%;
-    background-color: #4F0F0F;
-    padding: 3ch;
-    color: rgb(226, 197, 144);
+  border: 10px solid gold;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-self: center;
+  top: 150px;
+  width: 80%;
+  background-color: #4f0f0f;
+  padding: 3ch;
+  color: rgb(226, 197, 144);
+}
+
+#trending-section__content {
+  margin: 5%;
+  display: flex;
+  width: 90%;
+  align-self: center;
+  background-color: #641313;
+  height: 30rem;
+  flex-direction: row;
+}
+#trending-section__content .item {
+  border: 6px solid wheat;
+  padding: 2px;
+  margin: 1vw;
+  width: 150px;
+  height: fit-content;
+  transition: all 300ms ease-in-out;
+}
+#trending-section__content .item:hover {
+  border: solid wheat;
+  border: 3px 2px 2px 3px;
+  background-color: darkred;
+}
+#trending-section__content .item img {
+  width: 150px;
+  height: 150px;
+  object-fit: fill;
+}
+#trending-section__content .item a {
+  color: #c1f0c1;
+  text-decoration: none;
 }
