@@ -12,3 +12,5 @@ Mest för att jag tycker arrayer är så enkla att använda i js
 DET MÅSTE GÅ ATT SCROLLA PÅ MAIN PAGE!
 för man får inte plats med all content på något sätt alls....
 RIp
+
+Fixa alla Classes i #info till href's
