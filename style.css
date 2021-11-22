@@ -216,35 +216,77 @@ body {
     background-color: gray;
     padding: 2ch;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .reviewBox {
-    width: 10%;
-    background-color: #c1f0c1;
+    width: 20ch;
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
 }
 
-.review h3,
-.review {
+.review h3 {
     padding: 0px;
     margin: 0.5ch;
-    color: aqua;
+    color: cadetblue;
+}
+
+.review p {
+    color: black;
+    margin: 0 0 1ch 0.5ch;
 }
 
 .review {
+    border: 3px green groove;
     display: block;
     background-color: #4f0f0f;
-    width: fit-content;
+    width: 17ch;
     height: fit-content;
-}
-
-.gameOfficials {
-    width: 8ch;
-    background-color: #c1f0c1;
+    margin: 1ch;
 }
 
 .gameInfo {
     width: 8ch;
     background-color: #c1f0c1;
+}
+
+.fa {
+    margin: 0 0 1ch 1ch;
+}
+
+.checked {
+    color: orangered;
+}
+
+.gameOfficials {
+    width: 70%;
+    background-color: #c1f0c1;
+}
+
+.gameOfficials h1 {
+    color: black;
+    margin: 1ch;
+}
+
+.textspace {
+    padding: 2ch;
+    margin: 4ch;
+    background-color: #5F5F5F;
+    border: 1ch white ridge;
+}
+
+.gameOfficials p {
+    color: black;
+    margin: 1ch;
+}
+
+.device {
+    width: 10%;
+    background-color: aliceblue;
+}
+
+.reviewBox h2 {
+    margin-top: 1ch;
+    align-self: center;
 }
