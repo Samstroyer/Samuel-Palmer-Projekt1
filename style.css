@@ -313,20 +313,30 @@ body {
 }
 
 .gameInfo h3 {
-  margin: 1ch;
+  margin: 7ch 0 0 1ch;
   padding: 0;
   text-decoration: underline;
+}
+
+.gameInfo .skip {
+  margin: 1ch;
 }
 
 .gameInfo img {
   width: fit-content;
   height: 20ch;
   background: transparent;
-  margin-bottom: 10ch;
+}
+
+.gameInfo a {
+  margin: 0 0 6ch 2ch;
+  color: lightseagreen;
+  padding: 0;
+  font-size: medium;
 }
 
 .gameInfo h2 {
-  margin-left: 2ch;
+  margin: 0 0 6ch 2ch;
   text-shadow: none;
   color: black;
   padding: 0;
